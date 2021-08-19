@@ -1,0 +1,54 @@
+package group.artifact;
+
+import java.io.FileInputStream;
+import java.util.Properties;
+
+import org.json.JSONObject;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+import io.restassured.RestAssured;
+import io.restassured.http.Method;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+
+public class ApiTestcases {
+
+	Properties prop;
+	SoftAssert asserts = new SoftAssert();
+
+	@BeforeTest
+	public void config() throws Exception{
+		prop = new Properties();
+		FileInputStream fis = new FileInputStream("config.properties");
+		prop.load(fis); 
+
+	}
+
+
+	@Test(priority=1)
+	public void validGetById() throws Exception
+	{
+		RestAssured.baseURI = "http://localhost:8080";
+		RequestSpecification getIdRequest = RestAssured.given();
+		Response getById = getIdRequest.request(Method.GET,"/api/users/"+prop.getProperty("validId"));
+		//System.out.println(getById.asString());
+		JSONObject byIdPath = new JSONObject(getById.asString());
+		//System.out.println(getById.getHeaders());
+		//System.out.println(byIdPath.get("firstName"));
+
+	}
+	
+	@Test(priority=2)
+	public void invalidGetById() throws Exception
+	{
+		RestAssured.baseURI = "http://localhost:8080";
+		RequestSpecification getIdRequest = RestAssured.given();
+		Response getById = getIdRequest.request(Method.GET,"/api/users/"+prop.getProperty("invalidId"));
+		//System.out.println(getById.asString());
+		//System.out.println(getById.statusCode());
+		asserts.assertEquals(getById.statusCode(), 404);
+		
+	}
+}

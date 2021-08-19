@@ -1,0 +1,7 @@
+package group.artifact;
+
+public class ApiTestcases {
+
+	Properties prop;
+
+}

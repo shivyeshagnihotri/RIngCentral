@@ -1,0 +1,21 @@
+package group.artifact;
+
+import java.io.FileInputStream;
+import java.util.Properties;
+
+import org.testng.annotations.BeforeTest;
+
+public class ApiTestcases {
+
+	Properties prop;
+	
+	@BeforeTest
+	public void config() throws Exception{
+		prop = new Properties();
+		FileInputStream fis = new FileInputStream("config.properties");
+		prop.load(fis); 
+
+	}
+	
+	
+}

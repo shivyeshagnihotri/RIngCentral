@@ -1,0 +1,9 @@
+package group.artifact;
+
+import java.util.Properties;
+
+public class ApiTestcases {
+
+	Properties prop;
+
+}

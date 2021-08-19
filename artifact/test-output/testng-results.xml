@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-08-19T10:40:58Z" name="Default suite" finished-at="2021-08-19T10:41:00Z" duration-ms="2430">
+    <groups>
+    </groups>
+    <test started-at="2021-08-19T10:40:58Z" name="Default test" finished-at="2021-08-19T10:41:00Z" duration-ms="2430">
+      <class name="group.artifact.ApiTestcases">
+        <test-method is-config="true" signature="config()[pri:0, instance:group.artifact.ApiTestcases@4c012563]" started-at="2021-08-19T10:40:58Z" name="config" finished-at="2021-08-19T10:40:58Z" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config -->
+        <test-method signature="getInvalidId()[pri:1, instance:group.artifact.ApiTestcases@4c012563]" started-at="2021-08-19T10:40:58Z" name="getInvalidId" finished-at="2021-08-19T10:40:59Z" duration-ms="1634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getInvalidId -->
+        <test-method signature="getStringid()[pri:2, instance:group.artifact.ApiTestcases@4c012563]" started-at="2021-08-19T10:40:59Z" name="getStringid" finished-at="2021-08-19T10:41:00Z" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getStringid -->
+        <test-method signature="getWithoutid()[pri:3, instance:group.artifact.ApiTestcases@4c012563]" started-at="2021-08-19T10:41:00Z" name="getWithoutid" finished-at="2021-08-19T10:41:00Z" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getWithoutid -->
+        <test-method signature="getValidId()[pri:4, instance:group.artifact.ApiTestcases@4c012563]" started-at="2021-08-19T10:41:00Z" name="getValidId" finished-at="2021-08-19T10:41:00Z" duration-ms="51" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getValidId -->
+        <test-method signature="putValidIdWithoutHeader()[pri:5, instance:group.artifact.ApiTestcases@4c012563]" started-at="2021-08-19T10:41:00Z" name="putValidIdWithoutHeader" finished-at="2021-08-19T10:41:00Z" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putValidIdWithoutHeader -->
+        <test-method signature="putInvalidId()[pri:6, instance:group.artifact.ApiTestcases@4c012563]" started-at="2021-08-19T10:41:00Z" name="putInvalidId" finished-at="2021-08-19T10:41:00Z" duration-ms="46" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putInvalidId -->
+        <test-method signature="putValidIdWithInvalidData()[pri:7, instance:group.artifact.ApiTestcases@4c012563]" started-at="2021-08-19T10:41:00Z" name="putValidIdWithInvalidData" finished-at="2021-08-19T10:41:00Z" duration-ms="38" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putValidIdWithInvalidData -->
+        <test-method signature="putValidId()[pri:8, instance:group.artifact.ApiTestcases@4c012563]" started-at="2021-08-19T10:41:00Z" name="putValidId" finished-at="2021-08-19T10:41:00Z" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putValidId -->
+        <test-method signature="deleteInvalidId()[pri:9, instance:group.artifact.ApiTestcases@4c012563]" started-at="2021-08-19T10:41:00Z" name="deleteInvalidId" finished-at="2021-08-19T10:41:00Z" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteInvalidId -->
+        <test-method signature="deleteStringId()[pri:10, instance:group.artifact.ApiTestcases@4c012563]" started-at="2021-08-19T10:41:00Z" name="deleteStringId" finished-at="2021-08-19T10:41:00Z" duration-ms="50" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteStringId -->
+        <test-method signature="deleteWithoutId()[pri:11, instance:group.artifact.ApiTestcases@4c012563]" started-at="2021-08-19T10:41:00Z" name="deleteWithoutId" finished-at="2021-08-19T10:41:00Z" duration-ms="149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteWithoutId -->
+        <test-method signature="deleteValidId()[pri:12, instance:group.artifact.ApiTestcases@4c012563]" started-at="2021-08-19T10:41:00Z" name="deleteValidId" finished-at="2021-08-19T10:41:00Z" duration-ms="64" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteValidId -->
+      </class> <!-- group.artifact.ApiTestcases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
